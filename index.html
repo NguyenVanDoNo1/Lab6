@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Test Custom Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>New Unit Test Custom Challenge</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="./img/h1.png" alt="JavaScript">
+            <h3>JavaScript <span class="badge">Mocha</span></h3>
+            <p>Use the Mocha testing framework and create unit tests to grade solutions.</p>
+            <div class="buttons">
+                <button class="continue" onclick="openPopup('JavaScript Mocha')">Continue</button>
+                <button class="guide">Guide</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/h2.png" alt="TypeScript">
+            <h3>TypeScript <span class="badge">Mocha</span></h3>
+            <p>Use the Mocha testing framework and create unit tests to grade solutions.</p>
+            <div class="buttons">
+                <button class="continue" onclick="openPopup('TypeScript Mocha')">Continue</button>
+                <button class="guide">Guide</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/h3.jpg" alt="Python">
+            <h3>Python <span class="badge">pytest</span></h3>
+            <p>pytest is the most popular and fully-featured Python testing framework.</p>
+            <div class="buttons">
+                <button class="continue" onclick="openPopup('Python pytest')">Continue</button>
+                <button class="guide">Guide</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/h4.png" alt="PHP">
+            <h3>PHP <span class="badge">PHPUnit</span></h3>
+            <p>PHPUnit is a programmer-oriented testing framework for PHP.</p>
+            <div class="buttons">
+                <button class="continue" onclick="openPopup('PHP PHPUnit')">Continue</button>
+                <button class="guide">Guide</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/h5.jpg" alt="Java">
+            <h3>Java <span class="badge">JUnit</span></h3>
+            <p>JUnit is a popular unit-testing framework in the Java ecosystem.</p>
+            <div class="buttons">
+                <button class="continue" onclick="openPopup('Java JUnit')">Continue</button>
+                <button class="guide">Guide</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/h6.jpg" alt="Kotlin">
+            <h3>Kotlin <span class="badge">JUnit</span></h3>
+            <p>JUnit is a popular unit-testing framework in the Kotlin ecosystem.</p>
+            <div class="buttons">
+                <button class="continue" onclick="openPopup('Kotlin JUnit')">Continue</button>
+                <button class="guide">Guide</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup -->
+<div id="challenge-popup">
+    <span class="close-btn" onclick="closePopup()">X</span>
+    <h2>Create a New Unit Test Challenge</h2>
+    <label for="challenge-name">Challenge Name:</label>
+    <input type="text" id="challenge-name" placeholder="Enter challenge name">
+    <label for="difficulty">Difficulty:</label>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <label for="description">Short Description:</label>
+    <input type="text" id="description" placeholder="Enter description (optional)">
+    <a href="continue.html" id="open-ide">Click here to open the IDE and start coding</a>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
